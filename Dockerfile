@@ -25,6 +25,6 @@ USER docker
 RUN bundle install && \
   bundle update
 
-EXPOSE 8000 9500 9501
+EXPOSE 8000 9500 9501 6379
 
 CMD ["/home/docker/celluloid/start.sh"]
