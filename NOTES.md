@@ -30,5 +30,11 @@ clear && \
     --replicas=4 \
     mattwiater/piarmy-celluloid:latest
 
+# Remove service
+docker service rm piarmy-celluloid
+
 # 0mq: dependency
 http://zeromq.org/distro:debian
+
+# IP Address
+ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'

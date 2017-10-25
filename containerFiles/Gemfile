@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.2.2'
 
-gem 'dcell'
+#gem 'dcell'
+gem 'dcell', :git => 'https://github.com/celluloid/dcell.git'
 
 # Utilities
 gem 'json'
